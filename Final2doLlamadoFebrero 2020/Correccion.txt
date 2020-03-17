@@ -1,0 +1,95 @@
+Te
+detallo la corrección del examen:
+
+
+Casos
+de Uso:
+
+
+1)
++ agregarInspector(String apellido, String nombres, int dni, int legajo) : boolean
+
+Bien-.
+Para traer el máximo id se podía buscar el último elemento de la lista.
+
+
+2)
++ agregarContribuyente(String apellido, String nombres, int dni, boolean esExento) : boolean
+
+Bien-.
+Para traer el máximo id se podía buscar el último elemento de la lista.
+
+
+3)
++ traerContribuyente (int idPersona) : Contribuyente
+
+Bien
+
+
+4)
++ traerInspector (int idPersona) : Inspector
+
+Bien
+
+
+5)
++ traerAutomotor (String dominio) : Automotor
+
+Bien
+
+
+6)
++ agregarAutomotor(String dominio, int modelo, String marca, Contribuyente 
+
+contribuyente)
+: boolean //Excepción si el automotor repite el dominio
+
+Regular.
+Misma observación del punto 1. Además no es necesario el if else, ya que la excepción corta la operación.
+
+
+7)
++ agregarInspeccion(LocalDate fecha, boolean estadoPagado, String estado,
+Automotor automotor, Inspector inspector) : boolean
+
+Bien-.
+Misma observación del punto 1.
+
+
+8)
++ traerInspeccion (int idInspeccion) : Inspeccion 
+
+Bien.
+
+
+9)
++ traerInspeccion (Automotor automotor) : Inspeccion
+
+Regular.
+Para comparar objetos se tiene que usar el método equals.
+
+
+10)
++ traerInspeccion (LocalDate fecha) : Inspeccion
+
+Bien
+
+
+11)
++ traerInspeccion (Inspector inspector,  LocalDate fecha) : Inspeccion
+
+Bien
+
+
+12)
++ traerInspeccion (LocalDate fecha, String estado) : Inspeccion
+
+Bien
+
+
+
+Examen:
+8 (ocho)
+
+Nota
+definitiva: 8 (ocho)
